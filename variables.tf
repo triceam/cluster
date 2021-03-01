@@ -25,3 +25,8 @@ variable kube_version {
   #default = "3.11.104_openshift"
   default = "1.14"
 }
+
+
+variable "resource_group_name" {
+  default = "default"
+}
