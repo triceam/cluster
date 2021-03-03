@@ -5,7 +5,7 @@ data "ibm_resource_group" "resource_group" {
 }
   
 resource "ibm_container_cluster" "create_cluster" {
-  name              = var.name
+  name              = var.cluster_name
   datacenter        = var.datacenter
   default_pool_size = var.default_pool_size
   machine_type      = var.machine_type
