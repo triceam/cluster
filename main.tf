@@ -3,7 +3,7 @@
 data "ibm_resource_group" "resource_group" {
   name = var.resource_group_name
 }
-  
+    
 resource "ibm_container_cluster" "create_cluster" {
   name              = var.cluster_name
   datacenter        = var.datacenter
